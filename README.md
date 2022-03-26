@@ -1,1 +1,1 @@
-# project_glo
+# project_glo - интенсив
