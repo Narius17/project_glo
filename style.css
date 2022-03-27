@@ -26,6 +26,19 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('font/Roboto-Medium.eot');
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+      url('font/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+      url('font/Roboto-Medium.woff') format('woff'),
+      url('font/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
 html,
 body {
   font-family: 'Roboto', sans-serif;
@@ -76,6 +89,10 @@ h6 {
   margin: 0 auto;
 }
 
+:root {
+  --text-size-medium: 1.6rem;
+}
+
 .button {
   border-radius: 5rem;
   padding: 1rem 3rem;
@@ -114,7 +131,7 @@ h6 {
 }
 
 .header_nav a {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   font-weight: 400;
   line-height: 150%;
 }
@@ -122,7 +139,7 @@ h6 {
 .header_button {
   margin-left: 55.3rem;
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   font-weight: 400;
   line-height: 150%;
 }
@@ -178,7 +195,7 @@ h6 {
 }
 
 .timer_text {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   opacity: 0.4;
   font-weight: 400;
   line-height: 140%;
@@ -186,7 +203,7 @@ h6 {
 
 .main_display_button {
   background-image: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   font-weight: 700;
   line-height: 150%;
 }
@@ -220,7 +237,7 @@ h6 {
 
 .work_description {
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 160%;
 }
 
@@ -229,17 +246,23 @@ h6 {
     padding-bottom: 20rem;
 }
 
+.process .process_img {
+  transform: rotate(45deg);
+}
+
 .process_title {
     display: flex;
 }
 
 .process_img {
-    width: 9rem;
-    height: 4.5rem;
+    width: 9.5rem;
+    height: 9.5rem;
+    margin-right: 2rem;
 }
 
 .process_header {
     margin-bottom: 4.9rem;
+    padding-top: 4rem;
     font-weight: 700;
     font-size: 4.8rem;
     line-height: 140%;
@@ -255,7 +278,7 @@ h6 {
     width: 130rem;
     height: 0.2rem;
     position: absolute;
-    top: 31rem;
+    top: 34rem;
     left: 50%;
     transform: translate(-50%, 0);
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
@@ -269,7 +292,7 @@ h6 {
     max-width: 41.1rem;
     margin-bottom: 8rem;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 160%;
     opacity: 0.5;
 }
@@ -288,6 +311,114 @@ h6 {
     opacity: 0.5;
 }
 
+.command {
+  padding-bottom: 20rem;
+}
 
+.command_title {
+  margin-bottom: 11.9rem;
+}
 
+.command_header {
+  margin-bottom: 0;
+}
 
+.command_wrap {
+  display: flex;
+  justify-content: space-between;  
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
+.command_img {
+  width: 19rem;
+  height: 19rem;
+  margin-bottom: 4rem;
+  border-radius: 50%;
+}
+
+.command_item {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+}
+
+.command_name {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 140%;
+}
+
+.command_prof {
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+}
+
+.command_link {
+  font-weight: 400;
+  font-size: var(--text-size-medium);
+  line-height: 150%;
+  border: 0.1rem solid #FFFFFF;
+}
+
+.assembly {
+  padding-bottom: 24.4rem;
+}
+
+.assembly_wrap {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+}
+
+.assembly_header {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+}
+
+.assembly_description {
+  margin-bottom: 4.52rem;
+  font-weight: 400;
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  opacity: 0.5;
+}
+
+.assembly_button {
+  margin-bottom: 5.08rem;
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+  font-weight: 700;
+  font-size: var(--text-size-medium);
+  line-height: 150%;
+}
+
+.assembly_socials {
+  display: flex;
+
+}
+
+.assembly_item {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.assembly_item img {
+  width: 50%;
+  height: 50%;
+}
+
+.assembly_item:not(:last-child) {
+  margin-right: 3rem;
+}
